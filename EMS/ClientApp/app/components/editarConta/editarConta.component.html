@@ -1,0 +1,66 @@
+﻿<style>
+    .form-control {
+        width: 200px;
+    }
+</style>
+<div class="row">
+
+
+    <h3>Editar detalhes da Conta</h3>
+
+
+
+    <form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData()">
+        <label for="nomeConta" class="col-sm-4 control-label">Nome no cartao da conta</label>
+
+        <input type="text" class="form-control"
+               name="nomeConta"
+               formControlName="nomeConta">
+
+
+        <label for="Cpf" class="col-sm-4 control-label">Cpf</label>
+
+        <input type="text" class="form-control"
+               name="Cpf"
+               formControlName="Cpf">
+
+
+
+        <label for="Banco" class="col-sm-4 control-label">Banco</label>
+
+        <input type="text" class="form-control"
+               name="Banco"
+               formControlName="Banco">
+
+
+
+        <label for="Agencia" class="col-sm-4 control-label">Agencia</label>
+
+        <input type="text" class="form-control"
+               name="Agencia"
+               formControlName="Agencia">
+
+        <label for="Tipo de conta" class="col-sm-4 control-label">Tipo de conta</label>
+
+        <input type="text" class="form-control"
+               name="tipoConta"
+               formControlName="tipoConta">
+
+
+
+        <label for="Conta" class="col-sm-4 control-label">Conta</label>
+
+        <input type="text" class="form-control"
+               name="numConta"
+               formControlName="numConta">
+
+
+        <br />
+        <div class="col-sm-offset-4 col-sm-8">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+
+    </form>
+
+
+</div>

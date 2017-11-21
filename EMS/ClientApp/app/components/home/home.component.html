@@ -1,0 +1,42 @@
+﻿<style>
+    .form-control{
+        width: 200px;
+    }
+    .aste{
+        color:red;
+    }
+
+
+</style>
+
+<div class="dados">
+    <h1>Banco de Talentos - Easy Communication & Technology (Developers/Desenvolvedores)</h1>
+    <br />
+    <br />
+
+    <p>
+        <a  href="https://youtu.be/teXgoCzunVE">https://youtu.be/teXgoCzunVE</a>
+        <br /><br />
+        We appreciate your contact, check that you do not need to fill out the full form if already has this information on its linkedin, and check out the links at the end of the tutorials (developers).
+
+        Já agradecemos o seu contato, confira que você não precisa preencher o formulário completo caso já tenha essas informações no seu linkedin, e no final confira os links dos tutoriais (desenvolvedores).
+        <br /><br />
+        How we work / Como trabalhamos: <a href="https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM">https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</a>
+    </p>
+
+    <br />
+    <p class="aste">*Obrigatório</p>
+    <br />
+    <form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData()">
+
+        <h3>Endereço de E-mail<i style="color:red">*</i></h3>
+        <input type="text" name="Email" placeholder="Seu email" formControlName="Email" class="form-control">
+        <br /><br />
+
+        <button type="submit" class="btn btn-info" [disabled]="!formData.valid">Proximo</button>
+    </form>
+</div>
+
+
+
+

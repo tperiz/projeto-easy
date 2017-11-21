@@ -1,0 +1,85 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h3>Lista de Programadores</h3>
+        <br />
+
+    </div>
+    <div class="col-md-12">
+
+        <div class="form-actions no-color">
+
+            <div>
+                <span style="font-weight:bold;font-size:20px">Search:</span>
+                <input type="text" name="searchdata" #search (keyup)="0" />
+
+
+            </div>
+        </div>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+
+                        Id
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        E-mail
+                    </th>
+                    <th>
+                       Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let empData of ProgramadorList | searchFilter:search.value  ; let i = index; trackBy: programadorId">
+                    <td>
+                        {{empData.programadorId}}
+                    </td>
+                    <td>
+                        {{empData.nome}}
+                    </td>
+                    <td>
+                        {{empData.email}}
+                    </td>
+                    <td>
+                        {{empData.telefone}}
+                    </td>
+                    <td>
+
+                        <a [routerLink]="['/detalhes/',empData.email]"
+                           class="btn btn-primary">
+                            Detalhes Gerais
+                        </a>
+                        <a [routerLink]="['/detalhesConta/',empData.programadorId]"
+                           class="btn btn-primary">
+                            Detalhes Conta
+                        </a>
+                        <a [routerLink]="['/edit/',empData.email]"
+                           class="btn btn-success">
+                            Editar Dados Gerais
+                        </a>
+                        <a [routerLink]="['/editConta/',empData.programadorId]"
+                           class="btn btn-success">
+                            Editar Dados Conta
+                        </a>
+                        <a class="btn btn-danger" (click)="deleteProgramador(i+1)">
+                            Deletar
+                        </a>
+                    </td>
+                </tr>
+
+        </table>
+    </div>
+</div> 
+
+
+

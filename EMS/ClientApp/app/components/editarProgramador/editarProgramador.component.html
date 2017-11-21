@@ -1,0 +1,117 @@
+﻿<style>
+    .form-control {
+        width: 200px;
+    }
+</style>
+<div class="row">
+
+
+    <h3>Editar detalhes do programador</h3>
+
+
+
+    <form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData()">
+
+        <label for="Nome" class="col-sm-4 control-label">Nome</label>
+
+        <input type="text" class="form-control"
+               name="Nome" 
+               formControlName="Nome">
+
+
+
+
+        <label for="Skype" class="col-sm-4 control-label">Skype</label>
+
+        <input type="text" class="form-control"
+               name="Skype" 
+               formControlName="Skype">
+
+
+
+
+        <label for="Telefone" class="col-sm-4 control-label">Telefone</label>
+
+        <input type="text" class="form-control"
+               name="Telefone" 
+               formControlName="Telefone">
+
+
+
+        <label for="Linkedin" class="col-sm-4 control-label">Linkedin</label>
+
+        <input type="text" class="form-control"
+               name="Linkedin" 
+               formControlName="Linkedin">
+
+
+        <label for="Cidade" class="col-sm-4 control-label">Cidade</label>
+
+        <input type="text" class="form-control"
+               name="Cidade" 
+               formControlName="Cidade">
+
+
+
+        <label for="Estado" class="col-sm-4 control-label">Estado</label>
+
+        <input type="text" class="form-control"
+               name="Estado" 
+               formControlName="Estado">
+
+
+
+        <label for="Portifolio" class="col-sm-4 control-label">Portifolio</label>
+
+        <input type="text" class="form-control"
+               name="Portifolio" 
+               formControlName="Portifolio">
+
+
+
+        <label for="Disponibilidade" class="col-sm-4 control-label">Disponibilidade</label>
+
+        <input type="text" class="form-control"
+               name="Disponibilidade" 
+               formControlName="Disponibilidade">
+
+
+
+        <label for="Salario" class="col-sm-4 control-label">Salario</label>
+
+        <input type="text" class="form-control"
+               name="Salario" 
+               formControlName="Salario">
+
+
+        
+
+
+        <label for="Horario de trabalho" class="col-sm-4 control-label">Horario de trabalho</label>
+
+        <input type="text" class="form-control"
+               name="HorarioTrab" 
+               formControlName="HorarioTrab">
+
+
+       
+
+
+
+        <label for="Email" class="col-sm-4 control-label">Email</label>
+
+        <input type="text" class="form-control"
+               name="Email" 
+               formControlName="Email">
+
+
+
+        <br />
+        <div class="col-sm-offset-4 col-sm-8">
+            <button type="submit" class="btn btn-info">Submit</button>
+        </div>
+
+    </form>
+
+
+</div>

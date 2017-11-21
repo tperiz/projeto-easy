@@ -1,0 +1,84 @@
+﻿
+<script>
+    angular
+        .module('app', [])
+        .controller('CheckController', CheckController);
+
+    function CheckController() {
+        var tipoConta = this;
+    }
+
+</script>
+
+<style>
+    .form-control {
+        width: 200px;
+    }
+</style>
+
+<div class="dados">
+    <h1>Dados Bancarios</h1>
+    <br />
+    <p style="color:red;">Preencha todos os dados para liberar o botão</p>
+    <br />
+    <form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData2()">
+        <h4>Nome no cartao da conta</h4>
+        <input type="text" name="nomeConta" placeholder="Sua resposta" class="form-control" formControlName="nomeConta" />
+        <div *ngIf="!formData.get('nomeConta').valid && formData.get('nomeConta').dirty" style="color:red">
+            Adicione um Nome
+        </div>   
+        <br />
+
+        <h4>CPF</h4>         
+        <input type="text" class="form-control"
+         name="CPF" placeholder="Sua resposta"
+        formControlName="CPF">
+        <div *ngIf="!formData.get('CPF').valid && formData.get('CPF').dirty" style="color:red">
+        Adicione um CPF
+        </div>   
+        <br />
+
+            <h4>Banco</h4>
+            <input type="text" class="form-control"
+                   name="Banco" placeholder="Sua resposta"
+                   formControlName="Banco">
+        <div *ngIf="!formData.get('Banco').valid && formData.get('Banco').dirty" style="color:red">
+            Adicione um Banco
+        </div>   
+            <br />
+
+            <h4>Agencia</h4>
+            <input type="text" class="form-control"
+                   name="Agencia" placeholder="Sua resposta"
+                   formControlName="Agencia">
+        <div *ngIf="!formData.get('Agencia').valid && formData.get('Agencia').dirty" style="color:red">
+            Adicione uma Agencia
+        </div>   
+            <br />
+
+            <h4>Tipo de conta</h4>
+            <div ng-app="app" ng-controller="CheckController as tipoConta">
+                <input type="radio" [(ngModel)]='tipoConta' value="Conta Corrente" formControlName="tipoConta" />  Conta Corrente<br>
+                <input type="radio" [(ngModel)]='tipoConta' value="Conta Poupança" formControlName="tipoConta" />  Conta Poupança<br>
+            </div>
+        <div *ngIf="!formData.get('tipoConta').valid && formData.get('tipoConta').dirty" style="color:red">
+            Adicione um tipo de Conta
+        </div>   
+            <br />
+
+            <h4>Numero da conta</h4>
+            <input type="text" class="form-control"
+                   name="numConta" placeholder="Sua resposta"
+                   formControlName="numConta">
+        <div *ngIf="!formData.get('numConta').valid && formData.get('numConta').dirty" style="color:red">
+            Adicione uma Conta
+        </div>   
+            <br /><br />
+
+            <button type="submit" class="btn btn-info" [disabled]="!formData.valid">Proximo</button>
+
+            <br /><br />
+
+</form>
+
+</div>

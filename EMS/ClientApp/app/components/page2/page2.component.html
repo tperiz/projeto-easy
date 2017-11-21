@@ -1,0 +1,107 @@
+﻿<script >
+    angular
+        .module('app', [])
+        .controller('CheckController', CheckController);
+
+    function CheckController() {
+        var Disponibilidade = this;
+    } 
+</script>
+
+<style>
+    .form-control {
+        width: 200px;        
+    }
+    i {
+        color: red;
+    }
+</style>
+
+<div  class="dados">
+    <h1>Dados Pessoais</h1>
+    
+    <br />
+    <p style="color:red;">Preencha todos os *Obrigatorio para liberar o botão</p>
+    <br />
+    
+    <form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData()">
+
+        <h4>Nome<i>*</i></h4>
+        <input type="text" name="Nome" placeholder="Sua resposta" class="form-control" formControlName="Nome">
+        <div *ngIf="!formData.get('Nome').valid && formData.get('Nome').dirty" style="color:red">
+            Adicione um Nome
+        </div>   
+
+
+        <h4>Skype<i>*</i></h4>
+        <input type="text" name="Skype" placeholder="Sua resposta" class="form-control" formControlName="Skype">
+        <div *ngIf="!formData.get('Skype').valid && formData.get('Skype').dirty" style="color:red">
+            Adicione um Skype
+        </div>   
+
+
+        <h4>Telefone<i>*</i></h4>
+        <input type="text" name="Telefone" placeholder="Sua resposta" class="form-control" formControlName="Telefone">
+        <div *ngIf="!formData.get('Telefone').valid && formData.get('Telefone').dirty" style="color:red">
+            Adicione um Telefone
+        </div>   
+
+
+        <h4>Linkedin</h4>
+        <input type="text" name="Linkedin" placeholder="Sua resposta" class="form-control" formControlName="Linkedin">
+
+
+        <h4>Cidade<i>*</i></h4>
+        <input type="text" name="Cidade" placeholder="Sua resposta" class="form-control" formControlName="Cidade">
+        <div *ngIf="!formData.get('Cidade').valid && formData.get('Cidade').dirty" style="color:red">
+            Adicione uma Cidade
+        </div>   
+
+
+        <h4>Estado<i>*</i></h4>
+        <input type="text" name="Estado" placeholder="Sua resposta" class="form-control" formControlName="Estado">
+        <div *ngIf="!formData.get('Estado').valid && formData.get('Estado').dirty" style="color:red">
+            Adicione um Estado
+        </div>   
+
+
+        <h4>Portifolio</h4>
+        <input type="text" name="Portifolio" placeholder="Sua resposta" class="form-control" formControlName="Portifolio">
+
+
+        <h4>Disponibilidade para trabalhar hoje(quantidade de horas)<i>*</i></h4>
+        <div ng-app="app" ng-controller="CheckController as Disponibilidade">
+            <input type="radio" [(ngModel)]='Disponibilidade' value="Até 4 horas por dia" formControlName="Disponibilidade"/>  Até 4 horas por dia<br>
+            <input type="radio" [(ngModel)]='Disponibilidade' value="De 4 a 6 horas por dia" formControlName="Disponibilidade"/>  De 4 a 6 horas por dia<br>
+            <input type="radio" [(ngModel)]='Disponibilidade' value="De 6 a 8 horas por dia" formControlName="Disponibilidade"/>  De 6 a 8 horas por dia<br>
+            <input type="radio" [(ngModel)]='Disponibilidade' value="Acima de 8 horas por dia" formControlName="Disponibilidade"/>  Acima de 8 horas por dia<br>
+            <input type="radio" [(ngModel)]='Disponibilidade' value="Apenas finais de semana" formControlName="Disponibilidade"/>  Apenas finais de semana<br>
+
+        </div>
+        <div *ngIf="!formData.get('Disponibilidade').valid && formData.get('Disponibilidade').dirty" style="color:red">
+            Adicione uma Disponibilidade
+        </div>   
+
+
+        <h4>Horario para trabalhar(periodo)<i>*</i></h4>
+
+        <input type="checkbox" [(ngModel)]='HorarioTrab' formControlName="HorarioTrab"/>  Manhã (de 08:00 ás 12:00)<br>
+        <input type="checkbox" [(ngModel)]='HorarioTrab2' formControlName="HorarioTrab2"/>  Tarde (de 13:00 ás 18:00)<br>
+        <input type="checkbox" [(ngModel)]='HorarioTrab3' formControlName="HorarioTrab3"/>  Noite (de 19:00 as 22:00)<br>
+        <input type="checkbox" [(ngModel)]='HorarioTrab4' formControlName="HorarioTrab4"/>  Madrugada (de 22:00 em diante)<br>
+        <input type="checkbox" [(ngModel)]='HorarioTrab5' formControlName="HorarioTrab5"/>  Comercial (de 08:00 as 18:00)<br>
+
+
+        <h4>Pretenção salarial por hora<i>*</i></h4>
+        <input type="text" name="Salario" placeholder="Sua resposta" class="form-control" formControlName="Salario">
+        <br />
+        <div *ngIf="!formData.get('Salario').valid && formData.get('Salario').dirty" style="color:red">
+            Adicione um Salario
+        </div>   
+
+
+        <button type="submit" class="btn btn-info" [disabled]="!formData.valid">Proximo</button>
+
+        <br /><br />
+    </form>
+</div>

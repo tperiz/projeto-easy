@@ -1,0 +1,764 @@
+﻿<script>
+    angular
+        .module('app', [])
+        .controller('CheckController', CheckController);
+
+    function CheckController() {
+        var ionic = this.ionic;
+        var android = this.android;
+        var ios = this.ios;
+        var html = this.html;
+        var css = this.css;
+        var trap = this.trap;
+        var jquery = this.jquery;
+        var angular = this.angular;
+        var java = this.java;
+        var asp = this.asp;
+        var c = this.c;
+        var cmais = this.cmais;
+        var cake = this.cake;
+        var django = this.django;
+        var majento = this.majento;
+        var php = this.php;
+        var word = this.word;
+        var python = this.python;
+        var ruby = this.ruby;
+        var server = this.server;
+        var mysql = this.mysql;
+        var salesforce = this.salesforce;
+        var photoshop = this.photoshop;
+        var illustrator = this.illustrator;
+        var seo = this.seo;
+    }
+
+    
+</script>
+
+<style>
+    table td{
+        width:100px;
+    }
+    i{
+        color:red;
+    }
+    .form-control {
+        width: 200px;
+    }
+    .aste {
+        color: red;
+    }
+    div .caixa{
+        background-color:black;
+    }
+</style>
+
+<h1>Conhecimentos</h1>
+<br />
+<p style="color:red;">Preencha todos os *Obrigatorio para liberar o botão</p>
+<br />
+<form class="form-horizontal" [formGroup]="formData" (ngSubmit)="submitData3()">
+    <h3>Ionic<i>*</i></h3>
+    <br />
+    <br />
+    <div >
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as ionic">
+            <input type="radio" [(ngModel)]='ionic' value="0" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='ionic' value="1" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='ionic' value="2" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='ionic' value="3" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='ionic' value="4" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='ionic' value="5" id="ionic" name="ionic" formControlName="ionic" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+
+
+
+    <br />
+
+    <h3>Android<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as android">
+            <input type="radio" [(ngModel)]='android' value="0" id="android" name="android" formControlName="android" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='android' value="1" id="android" name="android" formControlName="android" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='android' value="2" id="android" name="android" formControlName="android" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='android' value="3" id="android" name="android" formControlName="android" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='android' value="4" id="android" name="android" formControlName="android" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='android' value="5" id="android" name="android" formControlName="android" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>IOS<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as ios">
+            <input type="radio" [(ngModel)]='ios' value="0" id="ios" name="ios" formControlName="ios" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='ios' value="1" id="ios" name="ios" formControlName="ios" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='ios' value="2" id="ios" name="ios" formControlName="ios" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='ios' value="3" id="ios" name="ios" formControlName="ios" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='ios' value="4" id="ios" name="ios" formControlName="ios" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='ios' value="5" id="ios" name="ios" formControlName="ios" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>HTML</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as html">
+            <input type="radio" [(ngModel)]='html' value="0" id="html" name="html" formControlName="html" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='html' value="1" id="html" name="html" formControlName="html" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='html' value="2" id="html" name="html" formControlName="html" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='html' value="3" id="html" name="html" formControlName="html" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='html' value="4" id="html" name="html" formControlName="html" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='html' value="5" id="html" name="html" formControlName="html" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>CSS</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController css">
+            <input type="radio" [(ngModel)]='css' value="0" id="css" name="css" formControlName="css" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='css' value="1" id="css" name="css" formControlName="css" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='css' value="2" id="css" name="css" formControlName="css" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='css' value="3" id="css" name="css" formControlName="css" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='css' value="4" id="css" name="css" formControlName="css" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='css' value="5" id="css" name="css" formControlName="css" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Bootstrap<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as trap">
+            <input type="radio" [(ngModel)]='trap' value="0" id="trap" name="trap" formControlName="trap" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='trap' value="1" id="trap" name="trap" formControlName="trap" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='trap' value="2" id="trap" name="trap" formControlName="trap" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='trap' value="3" id="trap" name="trap" formControlName="trap" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='trap' value="4" id="trap" name="trap" formControlName="trap" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='trap' value="5" id="trap" name="trap" formControlName="trap" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Jquery<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as jquery">
+            <input type="radio" [(ngModel)]='jquery' value="0" id="jquery" name="jquery" formControlName="jquery" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='jquery' value="1" id="jquery" name="jquery" formControlName="jquery" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='jquery' value="2" id="jquery" name="jquery" formControlName="jquery" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='jquery' value="3" id="jquery" name="jquery" formControlName="jquery"  style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='jquery' value="4" id="jquery" name="jquery" formControlName="jquery" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='jquery' value="5" id="jquery" name="jquery" formControlName="jquery" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>AngularJs<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as angular">
+            <input type="radio" [(ngModel)]='angular' value="0" id="angular" name="angular" formControlName="angular" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='angular' value="1" id="angular" name="angular" formControlName="angular" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='angular' value="2" id="angular" name="angular" formControlName="angular" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='angular' value="3" id="angular" name="angular" formControlName="angular" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='angular' value="4" id="angular" name="angular" formControlName="angular" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='angular' value="5" id="angular" name="angular" formControlName="angular" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Java</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as java">
+            <input type="radio" [(ngModel)]='java' value="0" id="java" name="java" formControlName="java" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='java' value="1" id="java" name="java" formControlName="java" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='java' value="2" id="java" name="java" formControlName="java" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='java' value="3" id="java" name="java" formControlName="java" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='java' value="4" id="java" name="java" formControlName="java" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='java' value="5" id="java" name="java" formControlName="java" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Asp.Net MVC<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as asp">
+            <input type="radio" [(ngModel)]='asp' value="0" id="asp" name="asp" formControlName="asp" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='asp' value="1" id="asp" name="asp" formControlName="asp" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='asp' value="2" id="asp" name="asp" formControlName="asp" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='asp' value="3" id="asp" name="asp" formControlName="asp" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='asp' value="4" id="asp" name="asp" formControlName="asp" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='asp' value="5" id="asp" name="asp" formControlName="asp" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>C</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as c">
+            <input type="radio" [(ngModel)]='c' value="0" id="c" name="c" formControlName="c" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='c' value="1" id="c" name="c" formControlName="c" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='c' value="2" id="c" name="c" formControlName="c" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='c' value="3" id="c" name="c" formControlName="c" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='c' value="4" id="c" name="c" formControlName="c" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='c' value="5" id="c" name="c" formControlName="c" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>C++</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as cmais">
+            <input type="radio" [(ngModel)]='cmais' value="0" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='cmais' value="1" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='cmais' value="2" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='cmais' value="3" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='cmais' value="4" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='cmais' value="5" id="cmais" name="cmais" formControlName="cmais" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Cake</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as cake">
+            <input type="radio" [(ngModel)]='cake' value="0" id="cake" name="cake" formControlName="cake" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='cake' value="1" id="cake" name="cake" formControlName="cake" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='cake' value="2" id="cake" name="cake" formControlName="cake" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='cake' value="3" id="cake" name="cake" formControlName="cake" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='cake' value="4" id="cake" name="cake" formControlName="cake" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='cake' value="5" id="cake" name="cake" formControlName="cake" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Django</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as django">
+            <input type="radio" [(ngModel)]='django' value="0" id="django" name="django" formControlName="django" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='django' value="1" id="django" name="django" formControlName="django" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='django' value="2" id="django" name="django" formControlName="django" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='django' value="3" id="django" name="django" formControlName="django" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='django' value="4" id="django" name="django" formControlName="django" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='django' value="5" id="django" name="django" formControlName="django" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Majento</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as majento">
+            <input type="radio" [(ngModel)]='majento' value="0" id="majento" name="majento" formControlName="majento" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='majento' value="1" id="majento" name="majento" formControlName="majento" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='majento' value="2" id="majento" name="majento" formControlName="majento" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='majento' value="3" id="majento" name="majento" formControlName="majento" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='majento' value="4" id="majento" name="majento" formControlName="majento" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='majento' value="5" id="majento" name="majento" formControlName="majento" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>PHP<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as php">
+            <input type="radio" [(ngModel)]='php' value="0" id="php" name="php" formControlName="php" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='php' value="1" id="php" name="php" formControlName="php" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='php' value="2" id="php" name="php" formControlName="php" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='php' value="3" id="php" name="php" formControlName="php" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='php' value="4" id="php" name="php" formControlName="php" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='php' value="5" id="php" name="php" formControlName="php" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Wordpress<i>*</i></h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as word">
+            <input type="radio" [(ngModel)]='word' value="0" id="word" name="word" formControlName="word" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='word' value="1" id="word" name="word" formControlName="word" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='word' value="2" id="word" name="word" formControlName="word" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='word' value="3" id="word" name="word" formControlName="word" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='word' value="4" id="word" name="word" formControlName="word" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='word' value="5" id="word" name="word" formControlName="word" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Python</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as python">
+            <input type="radio" [(ngModel)]='python' value="0" id="python" name="python" formControlName="python" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='python' value="1" id="python" name="python" formControlName="python" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='python' value="2" id="python" name="python" formControlName="python" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='python' value="3" id="python" name="python" formControlName="python" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='python' value="4" id="python" name="python" formControlName="python" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='python' value="5" id="python" name="python" formControlName="python" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Ruby</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as ruby">
+            <input type="radio" [(ngModel)]='ruby' value="0" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='ruby' value="1" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='ruby' value="2" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='ruby' value="3" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='ruby' value="4" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='ruby' value="5" id="ruby" name="ruby" formControlName="ruby" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>My SQL Server</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as server">
+            <input type="radio" [(ngModel)]='server' value="0" id="server" name="server" formControlName="server" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='server' value="1" id="server" name="server" formControlName="server" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='server' value="2" id="server" name="server" formControlName="server" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='server' value="3" id="server" name="server" formControlName="server" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='server' value="4" id="server" name="server" formControlName="server" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='server' value="5" id="server" name="server" formControlName="server" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>My SQL</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as mysql">
+            <input type="radio" [(ngModel)]='mysql' value="0" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='mysql' value="1" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='mysql' value="2" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='mysql' value="3" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='mysql' value="4" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='mysql' value="5" id="mysql" name="mysql" formControlName="mysql" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Salesforce</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as salesforce">
+            <input type="radio" [(ngModel)]='salesforce' value="0" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='salesforce' value="1" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='salesforce' value="2" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='salesforce' value="3" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='salesforce' value="4" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='salesforce' value="5" id="salesforce" name="salesforce" formControlName="salesforce" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+
+    <h3>Photoshop</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as photoshop">
+            <input type="radio" [(ngModel)]='photoshop' value="0" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='photoshop' value="1" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='photoshop' value="2" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='photoshop' value="3" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='photoshop' value="4" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='photoshop' value="5" id="photoshop" name="photoshop" formControlName="photoshop" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+    <h3>Illustrator</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as illustrator">
+            <input type="radio" [(ngModel)]='illustrator' value="0" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='illustrator' value="1" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='illustrator' value="2" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='illustrator' value="3" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='illustrator' value="4" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='illustrator' value="5" id="illustrator" name="illustrator" formControlName="illustrator" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+    <br />
+
+
+    <h3>SEO</h3>
+    <br />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <td style="width:150px;">Não Conheço</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>Senior</td>
+            </tr>
+        </table>
+        <div ng-app="app" ng-controller="CheckController as seo">
+            <input type="radio" [(ngModel)]='seo' value="0" id="seo" name="seo" formControlName="seo" style="position:relative; left:147px;" />
+            <input type="radio" [(ngModel)]='seo' value="1" id="seo" name="seo" formControlName="seo" style="position:relative; left:230px;" />
+            <input type="radio" [(ngModel)]='seo' value="2" id="seo" name="seo" formControlName="seo" style="position:relative; left:315px;" />
+            <input type="radio" [(ngModel)]='seo' value="3" id="seo" name="seo" formControlName="seo" style="position:relative; left:398px;" />
+            <input type="radio" [(ngModel)]='seo' value="4" id="seo" name="seo" formControlName="seo" style="position:relative; left:482px;" />
+            <input type="radio" [(ngModel)]='seo' value="5" id="seo" name="seo" formControlName="seo" style="position:relative; left:564px;" />
+
+        </div>
+    </div>
+
+    <br /><br />
+
+    <h3>Conhece mais alguma linguagem ou framework que não foi listado aqui em cima? Conte para nos e se auto avalie ainda de 0 a 5.</h3>
+    <input type="text" name="Outra" placeholder="Sua resposta" formControlName="Outra" class="form-control">
+    <br /><br />
+
+    <h3>Insira aqui o link do CRUD (create, update, delete)- ler informações no documento de Boas Vindas citado na descrição do formulário.</h3>
+    <br />
+    <h3> Confira nossos tutoriais e material explicando como a empresa funciona</h3>
+    <br />
+    <a href="https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM">https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</a>
+    <br /><br />
+
+    <h3>Link CRUD</h3>
+    <input type="text" name="Crud" placeholder="Sua resposta" formControlName="Crud" class="form-control">
+    <br /><br />
+
+
+
+    <button type="submit" class="btn btn-info" [disabled]="!formData.valid">Submit</button>
+    <br /><br />
+
+    </form>
